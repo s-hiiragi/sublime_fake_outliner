@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Outline Modoki</string>
+	<string>Symbol List2</string>
 	<key>scope</key>
 	<string>text.plain meta.paragraph.text</string>
 	<key>settings</key>
@@ -12,10 +12,10 @@
 		<integer>1</integer>
 		<key>symbolTransformation</key>
 		<string>
-			s/^(?!━+\s*■).*//;
-			s/^━+\s*■\s?(.*)/$1/;
+			s/^(?!━).*//;
+			s/^━{1,2}\s*■\s?([^\r\n]*).*//;
+			s/^━{3,}\s*■\s?([^\r\n]*).*/$1/;
 		</string>
 	</dict>
 </dict>
 </plist>
-
